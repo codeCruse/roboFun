@@ -67,10 +67,19 @@ h1{
 	position: absolute;
 	top: -20px;
 	display: flex;
-	justify-content: space-evenly;
+	align-items: center;
+	justify-content: center;
 }
 
 	/* Robot Eyes */
+
+.eyes{
+	width: 130px;
+	heigth: 30px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
 
 .leftEye, .rightEye{
 	width: 20px;
@@ -78,9 +87,9 @@ h1{
 	border: 3px solid black;
 	border-radius: 50%;
 	background: orange;
-	position: relative;
-	top: 50px;
+	display: inline-flex;
 }
+
 
 	/* Robot Ears */
 
