@@ -25,11 +25,12 @@ body{
 	align-items: flex-end;
 	margin: 0 10px 10px 10px;
 	font-family: cursive;
+	text-align: center;
 }
 
 h1{
 	font-weight: normal;
-	font-size: 25px;
+	font-size: calc(8px + 1.8vw);
 	margin-right: 10px;
 	font-family: arial;
 }
