@@ -10,7 +10,6 @@ body{
 	background:linear-gradient(rgb(240, 206, 174), rgb(255, 148, 155));
 	background-repeat: no-repeat;
 	color: rgb(255, 80, 80);
-
 }
 
 .imageSec{
@@ -237,11 +236,15 @@ h1{
 	background: rgb(61, 77, 158);
 	margin-top: -50px;
 	border: 3px solid black;
+	z-index: -1;
+	position: relative;
+	display: flex;
+	justify-content: center;
 }
 
 	/* Activate Button */
 
-.activateBtn{
+.activateBtn, .deactivateBtn{
 	padding: 10px 20px;
 	border-radius: 20px;
 	font-size: 20px;
@@ -249,6 +252,10 @@ h1{
 	top: 600px;
 	background: rgb(61, 77, 158);
 	color: white;
+}
+
+.deactivateBtn{
+	top: 650px;
 }
 
 
