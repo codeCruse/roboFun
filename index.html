@@ -11,6 +11,7 @@
 		<title> Interactive Robo </title>
 		<link rel="icon" type="image/x-icon" href="robo.ico">
 		<link rel="stylesheet" type="text/css" href="robo.css">
+		<link rel="stylesheet" type="text/css" href="roboAnimations.css">
 	</head>
 	
 	<body>
@@ -30,17 +31,17 @@
 				<div class="headContainer">
 					<div class="ears">
 						<div class="leftEar">
-							<div class="leftAntina"></div>
+							<div id="antinaLeft" class="leftAntina"></div>
 						</div>
 						<div class="rightEar">
-							<div class="rightAntina"></div>
+							<div id="antinaRight" class="rightAntina"></div>
 						</div>
 					</div>
 
 					<div class="innerHead">
 						<div class="eyes">
-							<div class="leftEye"></div>
-							<div class="rightEye"></div>
+							<div id="eyeBoth" class="leftEye"></div>
+							<div id="eyeBoth" class="rightEye"></div>
 						</div>
 					</div>
 				</div>
@@ -56,7 +57,7 @@
 						<div class="leftArm"></div>
 					</div>
 
-					<div class="glow"></div>
+					<div id="chestGlow" class="glow"></div>
 
 					<div class="rightShoulder">
 						<div class="rightArm"></div>
@@ -69,13 +70,12 @@
 			</section>
 
 			<section>
-				<div class="innerWheel"></div>
+				<div id="wheel" class="innerWheel"></div>
 			</section>
 
+			<button id="activate" class="activateBtn">Ativate</button>
 		</section>
-
-
-		
+	
 		<script type="text/javascript" src="robo.js"></script>
 	</body>
 

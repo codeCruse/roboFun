@@ -1,0 +1,70 @@
+
+/*  Antina animations  */
+
+.antL-animation{
+	animation: antinaLeft .3s ease 2 alternate;
+}
+
+.antR-animation{
+	animation: antinaRight .3s ease 2 alternate;
+}
+
+	@keyframes antinaLeft {
+		0% {transform: rotate(-0deg)}
+		25% {transform: rotate(-10deg)}
+		50% {transform: rotate(-20deg)}
+		75% {transform: rotate(-30deg)}
+		100% {transform: rotate(-40deg)}
+	}
+
+	@keyframes antinaRight {
+		0% {transform: rotate(0deg)}
+		25% {transform: rotate(10deg)}
+		50% {transform: rotate(20deg)}
+		75% {transform: rotate(30deg)}
+		100% {transform: rotate(40deg)}
+	}
+
+/*  Eye animations  */
+
+.eyeB-animation{
+	animation: eye .3s ease;
+}
+
+	@keyframes eye {
+		0%{width: 20px; height: 0px}
+		100%{width: 20px; height: 30px}
+	}
+
+/*  Chest Glow Animation  */
+
+.chest-animation{
+	animation: glows 1s infinite alternate;
+}
+	
+	@keyframes glows {
+		0%{border-top-color: cyan;}
+
+		50%{border-top-color: lightgreen;}
+
+		100%{border-top-color: peachpuff;}
+	}
+
+/*  Wheel Glow Animation  */
+
+.wheel-animation {
+	animation: wheelGlow 1.5s infinite alternate;
+}
+
+	@keyframes wheelGlow {
+		0%{background: peachpuff;}
+
+		25%{background: pink;}
+
+		50%{background: lightgreen;}
+
+		75%{background: cyan;}
+
+		100%{background: yellow;}
+	}
+
