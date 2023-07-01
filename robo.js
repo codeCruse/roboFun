@@ -1,7 +1,8 @@
 const activateBtn = document.querySelector('#activate')
 const deactivateBtn = document.querySelector('#deactivate')
 const eye = document.querySelectorAll('#eyeBoth')
-
+const left_arm = document.querySelector('.leftArm')
+const left_Forearm = document.querySelector('.leftForeArm')
 
  function activate(){
  	const antL = document.querySelector('#antinaLeft')
@@ -16,6 +17,9 @@ const eye = document.querySelectorAll('#eyeBoth')
 
 	antL.classList.add('antL-animation')
 	antR.classList.add('antR-animation')
+
+	left_arm.classList.add('leftArm-animation')
+	left_Forearm.classList.add('leftForeArm-animation')
 
 	wheelGlow.classList.add('wheel-animation')
 	chestGlow.classList.add('chest-animation')
@@ -34,6 +38,9 @@ const eye = document.querySelectorAll('#eyeBoth')
 
 	antL.classList.remove('antL-animation')
 	antR.classList.remove('antR-animation')
+
+	left_arm.classList.remove('leftArm-animation')
+	left_Forearm.classList.remove('leftForeArm-animation')
 
 	wheelGlow.classList.remove('wheel-animation')
 	chestGlow.classList.remove('chest-animation')

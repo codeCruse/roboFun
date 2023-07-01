@@ -48,10 +48,40 @@
 		100% {border-top-color: peachpuff;}
 	}
 
+/*    LeftArm Animation   */
+
+.leftArm-animation{
+	transform-origin: top;
+	animation: hello 1s 2 ease alternate .8s;
+}
+
+	@keyframes hello {
+		from {transform: rotate(0deg);}
+		to {transform: rotate(40deg);}
+	}
+
+	/* LeftForeArm Animation */
+
+.leftForeArm-animation{
+	transform-origin: top;
+	animation: forarm 1s 2 linear alternate .9s;
+}
+
+@keyframes forarm {
+	from {transform: rotate(0deg);}
+	5% {transform: rotate(15deg);}
+	10% {transform: rotate(30deg);}
+	30% {transform: rotate(60deg);}
+	60% {transform: rotate(120deg);}
+	70% {transform: rotate(160deg);}
+	80% {transform: rotate(100deg);}
+	to {transform: rotate(160deg);}
+}
+
 /*  Wheel Glow Animation  */
 
 .wheel-animation {
-	animation: wheelGlow 1.5s infinite alternate;
+	animation: wheelGlow 2s infinite alternate;
 }
 
 	@keyframes wheelGlow {
@@ -61,3 +91,4 @@
 		75% {background: cyan}
 		100% {background: yellow}
 	}
+
